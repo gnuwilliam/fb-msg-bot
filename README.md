@@ -46,6 +46,18 @@ var messages = require('./lib/messages'),
 messages.quickReply(sender, 'Favorite color?', options);
 ```
 
+---
+
+`isTyping`: Send 'chat bubbles' to the end user, simulating typing. Expect `receiver` as param
+
+### Example
+
+```js
+var messages = require('./lib/messages'),
+
+messages.isTyping(sender);
+```
+
 ## Improvements
 
-- bot typing support
+- refactor API requests repetition
