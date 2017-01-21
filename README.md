@@ -12,7 +12,7 @@ Messenger Platform documentation: https://developers.facebook.com/docs/messenger
 
 ## Message methods
 
-`sendMessage`: Allow you to manually send a message to the end user. Take `receiver` and `msg` as params
+`sendMessage`: Allow you to manually send a message to the end user. Expect `receiver` (string) and `msg` (string) as params.
 
 ### Example
 
@@ -20,6 +20,30 @@ Messenger Platform documentation: https://developers.facebook.com/docs/messenger
 var messages = require('./lib/messages');
 
 messages.sendMessage(sender, 'Hey! Welcome!');
+```
+
+---
+
+`quickReply`: Send a custom message to the user with buttons containing possible replies. Expect `receiver` (string), `msg` (string) and `options` (array) as params.
+
+### Example
+
+```js
+var messages = require('./lib/messages'),
+    options = [
+        {
+            content_type: "text",
+            title: "Red",
+            payload: "You chose Red!"
+        },
+        {
+            content_type: "text",
+            title: "Blue",
+            payload: "You chose Blue!"
+        }
+    ];
+
+messages.quickReply(sender, 'Favorite color?', options);
 ```
 
 ## Improvements
