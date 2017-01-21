@@ -1,0 +1,27 @@
+{
+  "name": "fb-msg-bot",
+  "version": "0.0.1",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "start": "nodemon init.js --exec babel-node"
+  },
+  "engines": {
+    "node": "6.9.4"
+  },
+  "author": "William Oliveira",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-latest": "^6.22.0",
+    "nodemon": "^1.11.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Facebook Messenger Bot",
+    "description": "This is a simple bot built using Facebook Messenger API",
+    "repository": "https://github.com/sudowilliam/fb-echo-bot.git",
+    "keywords": ["node", "facebook", "messenger", "bot"],
+    "env": {
+        "VERIFY_TOKEN": {
+            "description": "VERIFY_TOKEN",
+            "generator": "secret"
+        },
+        "PROFILE_TOKEN": {
+            "description": "PROFILE_TOKEN"
+        }
+    }
+}
