@@ -48,5 +48,4 @@ messages.quickReply(sender, 'Favorite color?', options);
 
 ## Improvements
 
-- `quick_reply` support
 - bot typing support
