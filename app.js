@@ -69,7 +69,7 @@ function receiveMessage (req, res, next) {
         //- iterate message instances
         if (instance.message && instance.message.text) {
             var msg_text = instance.message.text;
-            
+
             messages.sendMessage(sender, 'Hey! Welcome!');
         }
     });
